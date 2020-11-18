@@ -441,18 +441,43 @@ SECTION PRICING PANEL
 SECTION FORM
 ----------------------------- */
 
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
 input[type=text] , input[type=email] , select , textarea {
-    width: 75%;
+    width: 100%;
     font-weight: 100;
+    padding-left: 10px;
+    vertical-align: middle;
+    border-radius: 3px;
+    border: 1px solid #555;
 }
 
 input[type=text] , input[type=email] , select {
     height: 40px;
 }
-
-.col-left {
-    padding-left: 20%;
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
 }
+
+.btn-submit {
+    border: 1px solid #e67e22;
+    font-weight: 300;
+    padding: 10px 30px;
+    border-radius: 200px; 
+    text-decoration: none;
+    color: white;
+    background-color: #e67e22;   
+}
+.btn-submit:hover {
+    color: white;
+    background-color: #cf6d17;
+    cursor: pointer;
+}
+
+
 
 /* --------------------------
 FOOTER

@@ -334,61 +334,58 @@
             <h2>WE'RE HAPPY TO HEAR FROM YOU</h2>
         </div>
         <div class="row">
-            <form action="#" class="contact-form">
-                <div>
-                    <div class="col span-1-of-2 col-left">
+            <form action="#" class="contact-form" method="POST">
+                <div class="row">
+                    <div class="col span-1-of-3 col-left">
                         <label for="name">Name</label>
                     </div>
-                    <div class="col span-1-of-2">
-                        <input type="text" placeholder="Your name" id="name">
+                    <div class="col span-2-of-3">
+                        <input type="text" placeholder="Your name" id="name" required>
                     </div>
 
                 </div>
 
-                <div>
-                    <div class="col span-1-of-2 col-left">
+                <div class="row">
+                    <div class="col span-1-of-3 col-left">
                         <label for="email">Email</label>
                     </div>
-                    <div class="col span-1-of-2">
-                        <input type="email" placeholder="Your email" id="email">
+                    <div class="col span-2-of-3">
+                        <input type="email" placeholder="Your email" id="email" required>
                     </div>
 
                 </div>
-                <div>
-                    <div class="col span-1-of-2 col-left">
+                <div class="row">
+                    <div class="col span-1-of-3 col-left">
                         <label for="means">How did you find us?</label>
                     </div>
-                    <div class="col span-1-of-2">
+                    <div class="col span-2-of-3">
                         <select name="means" id="means">
                             <option value="friends">Friends</option>
-                            <option value="search engine">Search Engine</option>
+                            <option value="search">Search Engine</option>
                             <option value="advertisement">Advertisement</option>
                             <option value="other">Other</option>
                         </select>
                     </div>
-
-
                 </div>
 
-                <div>
-                    <div class="col span-1-of-2 col-left">Newsletter?</div>
-                    <div class="col span-1-of-2">
-                        <input type="checkbox" id="newsletter" checked>
-                        <label for="newsletter">Yes, please</label>
+                <div class="row">
+                    <div class="col span-1-of-3 col-left">Newsletter?</div>
+                    <div class="col span-2-of-3">
+                        <input type="checkbox" id="newsletter" checked> Yes, please
                     </div>
                 </div>
-                <div>
-                    <div class="col span-1-of-2 col-left">
+                <div class="row">
+                    <div class="col span-1-of-3 col-left">
                         <label for="message">Drop us a line</label>
                     </div>
-                    <div class="col span-1-of-2">
+                    <div class="col span-2-of-3">
                         <textarea name="message" id="message" rows="5" placeholder="Your message"></textarea>
                     </div>
 
                 </div>
-                <div>
-                    <div class="col span-1-of-2"></div>
-                    <div class="col span-1-of-2"><a href="#" class="btn btn-solid">Send it!</a></div>
+                <div class="row">
+                    <div class="col span-1-of-3"></div>
+                    <div class="col span-2-of-3"><input type="submit" value="Send it!" class="btn-submit"></div>
 
                 </div>
             </form>
