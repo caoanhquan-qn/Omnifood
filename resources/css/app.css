@@ -390,25 +390,13 @@ SECTION PRICING PANEL
 }
 .subscription-plan .plans {
     background-color: #fff;
-    padding: 30px;
-    margin: 20px;
-    
-}
-.subscription-plan .plans ul {
-    border-top: 2px solid #f4f4f4;
-    border-bottom: 2px solid #f4f4f4;
-    line-height: 2;
-    padding: 30px 0;
-    list-style: none;
-    
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 2px #e3e3e3;
 }
 
-
-.plans ul li::before {
-    content: "\2713\0020";
-    color: #e67e22;
-    margin-right: 10px;
-}
 .plans p:first-of-type {
     color: #e67e22;
     font-size: 300%;
@@ -423,14 +411,52 @@ SECTION PRICING PANEL
     font-size: 20px;
     margin-left: 5%;
 }
-.plans a {
-    display: block;
-    margin-top: 20px;
-    transform: translateX(30%);
+.subscription-plan .plans ul {
+    border-top: 2px solid #f4f4f4;
+    border-bottom: 2px solid #f4f4f4;
+    line-height: 2;
+    padding: 30px 0;
+    list-style: none;
+    
+}
+
+.plans ul li::before {
+    content: "\2713";
+    color: #e67e22;
+    margin-right: 10px;
+}
+.subscription-plan .col:last-of-type .plans ul li:nth-of-type(3n)::before {
+    content: "\2715";
+    color: #e67e22;
+    
+} 
+
+.plans div:last-child {
     text-align: center;
+    vertical-align: middle;
+    margin-top: 20px;
 }
 
 /* --------------------------
-SECTION PRICING PANEL
+SECTION FORM
 ----------------------------- */
 
+input[type=text] , input[type=email] , select , textarea {
+    width: 75%;
+    font-weight: 100;
+}
+
+input[type=text] , input[type=email] , select {
+    height: 40px;
+}
+
+.col-left {
+    padding-left: 20%;
+}
+
+/* --------------------------
+FOOTER
+----------------------------- */
+.footer {
+    width: 100%;
+}
