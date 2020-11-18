@@ -104,7 +104,7 @@ HEADER
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/hero.jpg);
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     
@@ -328,42 +328,50 @@ SECTION CITIES
 
 
 /* --------------------------
-SECTION REVIEWS
+SECTION TESTIMONINALS
 ----------------------------- */
-.section-review {
+.section-testimonials {
     width: 100%;
+    margin: 0 auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/back-customers.jpg);
-    background-position: center;
     background-size: cover;
-    color: white;
-    margin: 0 auto; 
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.testimonials {
+    margin-top: 40px;
+}
+
+blockquote {
+    font-style: italic;
+    padding: 2%;
+    line-height: 1.45;
+    position: relative;
+    
+}
+blockquote::before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -45px;
+    left: 17.5px;
     
 }
 
 cite {
     display: block;
     margin-top: 40px;
-    align-items: center;
-    justify-content: center;
+    font-size: 90%;
 }
 
-blockquote {
-    font-style: italic;
-    padding-right: 20px;
-    line-height: 1.45;
-}
-
-.row-2 {
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
-}
-
-.row-2 img {
+.testimonials img {
     border-radius: 50%;
     float: left;
     width: 15%;
     margin-right: 20px;
+    vertical-align: middle;
     
 }
 
@@ -395,6 +403,7 @@ SECTION PRICING PANEL
     
 }
 
+
 .plans ul li::before {
     content: "\2713\0020";
     color: #e67e22;
@@ -403,7 +412,7 @@ SECTION PRICING PANEL
 .plans p:first-of-type {
     color: #e67e22;
     font-size: 300%;
-    font-weight: 250;
+    font-weight: 100;
 }
 .plans p:nth-of-type(2n) {
     font-size: 80%;
@@ -415,10 +424,10 @@ SECTION PRICING PANEL
     margin-left: 5%;
 }
 .plans a {
+    display: block;
     margin-top: 20px;
     transform: translateX(30%);
     text-align: center;
-    
 }
 
 /* --------------------------
