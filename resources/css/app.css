@@ -491,13 +491,17 @@ FOOTER
 .about-us {
     float: left;
     font-size: 80%;
-
 }
 .social-network {
     text-align: right;
 }
+.footer nav ul li a {
+    text-decoration: none;
+    color: #b3b3b3;
+    transition: color 0.2s;
+}
 #facebook-logo:hover {
-    color: #4267B2;
+    color: #1877f2;
 
 }
 #twitter-logo:hover {
@@ -509,9 +513,11 @@ FOOTER
 
 }
 #instagram-logo:hover {
-    color: #E1306C;
+    color: #c32aa3;
 }
-
+.about-us a:hover {
+    color: #fff;
+}
 .footer div:first-of-type {
     padding-bottom: 20px;
 }
@@ -524,10 +530,6 @@ FOOTER
     display: inline-block;
     list-style: none;
     margin-left: 15px; 
-}
-.footer nav ul li a {
-    text-decoration: none;
-    color: #b3b3b3;
 }
 .footer p {
     text-align: center;
