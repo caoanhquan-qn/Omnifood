@@ -90,6 +90,8 @@
   .btn-app img {
     height: 40px;
     margin-right: 20px;
+    -webkit-transform: translateX(60%);
+    -ms-transform: translateX(60%);
     transform: translateX(60%);
   }
   h2 {
@@ -153,4 +155,20 @@
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
+  .btn-solid {
+    margin-left: 15px;
+  }
+  .btn-app img {
+    height: 40px;
+    margin-right: 5px;
+    -webkit-transform: translateX(20%);
+    -ms-transform: translateX(20%);
+    transform: translateX(20%);
+  }
+  h2 {
+    font-size: 120%;
+  }
+  .col {
+    margin-bottom: 5px;
+  }
 }
