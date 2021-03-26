@@ -599,12 +599,20 @@ FOOTER
 .sticky .main-nav {
   margin-top: 15px;
 }
-/* .sticky .main-nav li {
-  margin-left: 0;
-} */
+
+.logo-black {
+  display: none;
+}
+
 .sticky .logo {
+  display: none;
+}
+.sticky .logo-black {
+  display: block;
+  width: auto;
   height: 50px;
   margin: 5px 0;
+  float: left;
 }
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
