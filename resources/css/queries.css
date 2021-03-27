@@ -76,12 +76,43 @@
   .hero-text-box h1 {
     font-size: 180%;
   }
+  .mobile-nav-icon {
+    display: inline-block;
+  }
   .main-nav {
-    float: none;
     display: none;
   }
+  .main-nav {
+    float: left;
+    margin-top: 35px;
+    margin-left: 25px;
+  }
+  .main-nav li {
+    display: block;
+  }
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    display: block;
+    border: 0;
+    padding: 10px 0;
+    font-size: 100%;
+  }
+  .sticky .main-nav {
+    margin-top: 10px;
+  }
+  .sticky .main-nav li a:link,
+  .sticky .main-nav li a:visited {
+    padding: 10px 0;
+    font-size: 90%;
+  }
+  .sticky .mobile-nav-icon {
+    margin-top: 10px;
+  }
+  .sticky .mobile-nav-icon ion-icon {
+    color: black;
+  }
   .logo {
-    width: 20%;
+    width: 15%;
     height: auto;
   }
   .app {
@@ -106,7 +137,7 @@
   }
   .num {
     width: 40px;
-    height: 40px;
+    height: 100%;
     margin-right: 15px;
     font-size: 120%;
   }
@@ -119,6 +150,7 @@
   .location .cities-ionicon {
     margin-right: 0;
     font-size: 100%;
+    width: 10%;
   }
   .location h3 {
     margin-left: 25px;

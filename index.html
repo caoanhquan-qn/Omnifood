@@ -3,10 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Omnifood</title>
+    <meta
+      name="description"
+      content="Omnifood is a premium food delivery service with the mission to bring affordable and healthy meals to as many people as possible"
+    />
     <link rel="stylesheet" href="vendors/css/normalize.css" />
     <link rel="stylesheet" href="vendors/css/grid.css" />
     <link rel="stylesheet" href="vendors/css/ionicons.min.css" />
+    <link rel="stylesheet" href="vendors/css/animate.css" />
     <link rel="stylesheet" href="resources/css/app.css" />
     <link rel="stylesheet" href="resources/css/queries.css" />
     <link rel="icon" type="image/x-icon" href="resources/images/logo.ico" />
@@ -14,6 +18,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
     />
+    <title>Omnifood</title>
   </head>
 
   <body>
@@ -31,20 +36,23 @@
             class="logo-black"
           />
 
-          <ul class="main-nav">
+          <ul class="main-nav js--main-nav">
             <li>
               <a href="#features">FOOD DELIVERY</a>
             </li>
             <li>
-              <a href="#works">HOW IT WORKS</a>
+              <a href="#steps">HOW IT WORKS</a>
             </li>
             <li>
               <a href="#cities">OUR CITIES</a>
             </li>
             <li>
-              <a href="#plans">SIGN UP</a>
+              <a href="#pricing">SIGN UP</a>
             </li>
           </ul>
+          <a class="mobile-nav-icon js--nav-icon"
+            ><ion-icon name="menu"></ion-icon
+          ></a>
         </div>
       </nav>
       <div class="hero-text-box">
@@ -52,12 +60,16 @@
           GOODBYE JUNK FOOD. <br />
           HELLO SUPER HEALTHY MEALS.
         </h1>
-        <a href="#" class="btn btn-solid">I'm hungry</a>
-        <a href="#" class="btn btn-ghost">Show me more</a>
+        <a href="#" class="btn btn-solid js--scroll-to-pricing-panel"
+          >I'm hungry</a
+        >
+        <a href="#" class="btn btn-ghost js--scroll-to-section-features"
+          >Show me more</a
+        >
       </div>
     </header>
 
-    <section class="section-features js--section-features">
+    <section class="section-features js--section-features" id="features">
       <div class="row">
         <h2>GET FOOD FAST &mdash; NOT FAST FOOD</h2>
         <p class="long-copy">
@@ -66,7 +78,7 @@
           we're really good at it, we promise!
         </p>
       </div>
-      <div class="row flex-container">
+      <div class="row flex-container js--waypoint-1">
         <div class="col span-1-of-4 box">
           <ion-icon name="infinite-sharp" class="ionicon"></ion-icon>
           <h3>UP TO 365 DAYS/YEAR</h3>
@@ -151,7 +163,7 @@
       </figure>
     </section>
 
-    <section class="section-steps">
+    <section class="section-steps" id="steps">
       <div class="row">
         <h2>HOW IT WORKS &mdash; SIMPLE AS 1,2,3</h2>
       </div>
@@ -160,7 +172,7 @@
           <img
             src="resources/images/app-iPhone.png"
             alt="Omnifood app Iphone"
-            class="app"
+            class="app js--waypoint-2"
           />
         </div>
         <div class="span-1-of-2 col steps-box">
@@ -198,11 +210,11 @@
       </div>
     </section>
 
-    <section class="section-cities">
+    <section class="section-cities" id="cities">
       <div class="row">
         <h2>WE'RE CURRENTLY IN THESE CITIES</h2>
       </div>
-      <div class="row cities">
+      <div class="row cities js--waypoint-3">
         <div class="col span-1-of-4 location">
           <img src="resources/images/lisbon-3.jpg" alt="Lisbon" />
           <h3>LISBON</h3>
@@ -313,13 +325,13 @@
         </blockquote>
       </div>
     </section>
-    <section class="pricing-panel">
+    <section class="pricing-panel js--pricing-panel" id="pricing">
       <div class="row">
         <h2>START EATING HEALTHY TODAY</h2>
       </div>
       <div class="row subscription-plan">
         <div class="col span-1-of-3">
-          <div class="plans">
+          <div class="plans js--waypoint-4">
             <h3>PREMIUM</h3>
             <p>$399<span>/month</span></p>
             <p>That's only 13.30$ per meal</p>
@@ -330,7 +342,7 @@
               <li>Free delivery</li>
             </ul>
             <div>
-              <a href="#" class="btn btn-solid">Sign up now</a>
+              <a href="#" class="btn btn-solid js--sign-up">Sign up now</a>
             </div>
           </div>
         </div>
@@ -346,7 +358,7 @@
               <li>Free delivery</li>
             </ul>
             <div>
-              <a href="#" class="btn btn-ghost">Sign up now</a>
+              <a href="#" class="btn btn-ghost js--sign-up">Sign up now</a>
             </div>
           </div>
         </div>
@@ -362,7 +374,7 @@
               <li>Free delivery</li>
             </ul>
             <div>
-              <a href="#" class="btn btn-ghost">Sign up now</a>
+              <a href="#" class="btn btn-ghost js--sign-up">Sign up now</a>
             </div>
           </div>
         </div>
@@ -487,10 +499,10 @@
     </footer>
 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="vendors/js/jquery.waypoints.min.js"></script>
     <script src="resources/js/script.js"></script>
   </body>

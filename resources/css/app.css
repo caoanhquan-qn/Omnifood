@@ -158,6 +158,19 @@ HEADER
   border-bottom: 2px solid #e67e22;
 }
 
+/* Mobile nav */
+
+.mobile-nav-icon {
+  display: none;
+  float: right;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.mobile-nav-icon ion-icon {
+  font-size: 200%;
+  color: #fff;
+}
+
 /* --------------------------
 SECTION FEATURES
 ----------------------------- */
@@ -583,7 +596,10 @@ FOOTER
   color: red;
 }
 
-/* Sticky nav */
+/* --------------------------
+STICKY NAV
+----------------------------- */
+
 .sticky {
   position: fixed;
   top: 0;
@@ -618,4 +634,27 @@ FOOTER
 .sticky .main-nav li a:visited {
   color: rgba(0, 0, 0);
   padding: 8px 0;
+}
+
+/* --------------------------
+ANIMATIONS
+----------------------------- */
+
+.js--waypoint-1,
+.js--waypoint-2,
+.js--waypoint-3 {
+  opacity: 0;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.js--waypoint-4 {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.js--waypoint-1.animate__animated,
+.js--waypoint-2.animate__animated,
+.js--waypoint-3.animate__animated {
+  opacity: 1;
 }
